@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link type="text/css" rel="stylesheet" href="../public/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../public/css/bootstrap.min.css" />
+
+    <script src="../src/js/main.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a id="logo" class="navbar-brand" href="#">Student Management</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <h1 id="heading">Welcome to student management</h1>
+            <hr/>
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <h3>Courses</h3>
+                    <form id="course-form" action="#">
+                        <div class="mb-3">
+                            <label for="course-name" class="form-label">Name:</label>
+                            <input type="text" required placeholder="Course Name" class="form-control" id="course-name" name="name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="course-code" class="form-label">Code:</label>
+                            <input type="text" required placeholder="Course Code" class="form-control" id="course-code" name="code" >
+                        </div>
+                        <button id="create-course" class="btn btn-primary">Submit</button>
+                        <button type="submit"  class="formSubmit" style="display: none">Submit</button>
+
+                    </form>
+                    <table id="course-table" class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Code</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Students</h3>
+                    <form id="student-form">
+                        <div class="mb-3">
+                            <label for="first-name" class="form-label">First Name:</label>
+                            <input type="text" placeholder="First Name" class="form-control" id="first-name" name="firstName" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="form-label">Last Name:</label>
+                            <input type="text" placeholder="Last Name" class="form-control" id="last-name" name="lastName" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="text" placeholder="Email" class="form-control" id="email" name="email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="major" class="form-label">Major:</label>
+                            <input type="text" placeholder="Major" class="form-control" id="major" name="major" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="gpa" class="form-label">GPA:</label>
+                            <input type="text" placeholder="GPA" class="form-control" id="gpa" name="gpa" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="gpa" class="form-label">Courses Taken:</label>
+                            <select class="form-control" id="course-taken" multiple>
+
+                            </select>
+                        </div>
+
+                        <button type="submit" id="create-student" class="btn btn-primary">Submit</button>
+                    </form>
+
+                    <table id="student-table" class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Code</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Major</th>
+                            <th scope="col">Courses Taken</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
